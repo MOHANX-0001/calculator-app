@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Expression / history line -->
+        <div class="expression" id="expression"></div>
+        <!-- Main display -->
+        <div class="display" id="display">0</div>
+
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="function" data-action="clear">AC</button>
+            <button class="function" data-action="negate">+/−</button>
+            <button class="function" data-action="percent">%</button>
+            <button class="operator" data-action="operator" data-value="/">÷</button>
+
+            <!-- Row 2 -->
+            <button class="number" data-action="number" data-value="7">7</button>
+            <button class="number" data-action="number" data-value="8">8</button>
+            <button class="number" data-action="number" data-value="9">9</button>
+            <button class="operator" data-action="operator" data-value="*">×</button>
+
+            <!-- Row 3 -->
+            <button class="number" data-action="number" data-value="4">4</button>
+            <button class="number" data-action="number" data-value="5">5</button>
+            <button class="number" data-action="number" data-value="6">6</button>
+            <button class="operator" data-action="operator" data-value="-">−</button>
+
+            <!-- Row 4 -->
+            <button class="number" data-action="number" data-value="1">1</button>
+            <button class="number" data-action="number" data-value="2">2</button>
+            <button class="number" data-action="number" data-value="3">3</button>
+            <button class="operator" data-action="operator" data-value="+">+</button>
+
+            <!-- Row 5 -->
+            <button class="number span-two" data-action="number" data-value="0">0</button>
+            <button class="number" data-action="decimal">.</button>
+            <button class="equals" data-action="equals">=</button>
+        </div>
+
+        <!-- Backspace button floating -->
+        <button class="backspace-btn" id="backspaceBtn" title="Backspace">⌫</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
