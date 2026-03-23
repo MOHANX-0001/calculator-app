@@ -117,3 +117,5 @@ Works in all modern browsers (Chrome, Firefox, Safari, Edge). No polyfills requi
 ## 📄 License
 
 MIT — free to use, modify, and distribute.
+
+Testing PR for collaboration
